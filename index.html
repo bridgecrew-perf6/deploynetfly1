@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Cavalo do Cão</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="aula17.css" />
+  </head>
+  <body>
+    <header>
+      <nav class="menu">
+        <a href="tags2.html" target="_blank">Inicio</a>
+        <a href="https://www.w3schools.com/" target="_blank">Novidades</a>
+        <a href="https://www.w3schools.com/" target="_blank">Patrocinadores</a>
+        <a href="https://www.w3schools.com/" target="_blank">Login</a>
+      </nav>
+    </header>
+    <h2>
+      Conheça o cavalo-do-cão, o inseto<br />
+      com a picada mais dolorida do mundo!
+    </h2>
+    <br><br><br>
+    <img 
+      src="https://live.staticflickr.com/1847/44770749931_7349a4a9c2_b.jpg" 
+      width="600px"
+      alt=""
+    />
+    <p id="texto-imagem">
+      A vespa cavalo-do-cão é um inseto famoso pela sua agressividade e pela
+      potência de seu ferrão,<br />
+      responsável pela picada de inseto mais dolorida do mundo! Essa vespa é
+      conhecida por diversos<br />
+      nomes, entre os quais marimbondo-caçador, marimbondo-cavalo,
+      vespa-caçadora e caçador-<br />de-aranha. Este último nome se deve a uma
+      prática comum desse inseto: caçar aranhas! E das grandes!<br> <br>
+    </p>
+    <iframe id="video" width="660" height="315" src="https://www.youtube.com/embed/g3g7CkCLhrE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    <a href="aula171.html">MAIS VIDEOS</a>
+    <br><br>
+    <h2 id="smith">Escala Schimidt mede o nível de dor da picada</h2> <br>
+    <p>
+      Quem garante essa potência toda é o especialista em insetos Justin Schmidt
+      do Southwest Biological Insti<br />tute (SBSC), do estado americano do
+      Arizona. Ele criou uma escala de dor para picadas de insetos que vai<br />
+      de 1 a 4 - sendo 1 menos dolorosa e 4 mais dolorosa. E adivinha qual a
+      pontuação da picada da vespa cava<br />lo-do-cão? Acertou quem respondeu
+      4!<br>
+      <br>
+    </p>
+
+    <h2>Tipos de Insetos</h2>
+    <ul class="tree">
+      <li>
+        <span unicap>Insetos</span>
+        <ul>
+          <li>
+            <span unicap>Voadores</span>
+            <ul>
+              <li>
+                <img id="voa"
+                  src="https://static.turbosquid.com/Preview/2020/04/18__08_07_25/FlyingInsectsCollectionvray3dmodel000.jpgDEB8637D-EADF-4EA1-90E2-59DB3442EC65DefaultHQ.jpg"
+                  width="160px;" 
+                  alt=""
+                />
+              </li>
+            </ul>
+          </li>
+          <li>
+            <span unicap>Terrestres</span>
+            <ul>
+              <li>
+                <img
+                  src="https://pbs.twimg.com/media/EcMeoFyWkAcbQrD.jpg"
+                  width="170px"
+                  alt=""
+                />
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </li>
+      
+       
+            </ul>
+          </li>
+        </ul>
+      </li>
+    </ul>
+    <script>
+      document.querySelectorAll('[unicap]').forEach(folder => {
+        folder.onclick = function (e) {
+          const ul = folder.nextElementSibling
+          const d = ul.style.display
+          ul.style.display = d === 'none' ? 'block' : 'none'
+        }
+      })
+    </script>
+  </body>
+</html>
